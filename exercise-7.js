@@ -1,25 +1,6 @@
 function hapusSimbol(str) {
-  // CARA I :
-  // return str.replace(/[%$@#~!+*=\- ]/g, '');
-  
-  // CARA II :
   return str.replace(/[^\w]/gi, '');
 }
-
-/*
-function hapusSimbol(str) {
-  // you can only write your code here!
-  return str.match(/[a-z]|[0-9]/gi).join('');
-}
-
-*/
-
-/*
-function hapusSimbol(str) {
-  var str_new = str.replace(/[^a-z0-9A-Z]+/g,'');
-  return str_new;
-}
-*/
 
 // TEST CASES
 console.log(hapusSimbol('test%$4aa')); // test4aa
